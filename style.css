@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0; /* Remove todas as margens padrão dos elementos */
+    padding: 0; /* Remove todos os preenchimentos padrão dos elementos */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura total do elemento */
+}
+
+/* Variáveis de tema */
+:root {
+    --bg-color: #000; /* Cor de fundo padrão (dark mode) */
+    --text-color: #fff; /* Cor de texto padrão (dark mode) */
+    --secondary-text: #999; /* Cor de texto secundária (dark mode) */
+    --border-color: #333; /* Cor de borda (dark mode) */
+}
+
+/* Tema claro */
+html.light-mode {
+    --bg-color: #f5f5f5;
+    --text-color: #1a1a1a;
+    --secondary-text: #666;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Define a família de fontes para o corpo da página */
+    background-color: var(--bg-color); /* Define a cor de fundo usando variável */
+    color: var(--text-color); /* Define a cor do texto usando variável */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda os limites do elemento */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para mudanças de tema */
+}
+
+main {
+    text-align: center; /* Alinha o texto ao centro */
+    max-width: 800px; /* Define a largura máxima do elemento principal */
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+}
+
+h1 {
+    font-size: 3rem; /* Define o tamanho da fonte do título principal */
+    margin-bottom: 3rem; /* Adiciona margem inferior ao título */
+    font-weight: 400; /* Define o peso da fonte como normal */
+}
+
+.profiles {
+    display: flex; /* Usa flexbox para o layout dos perfis */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 2rem; /* Define o espaço entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+}
+
+.profile {
+    display: flex; /* Usa flexbox para o layout do perfil */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens verticalmente */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    transition: transform 0.3s ease; /* Adiciona transição suave para transformações */
+    text-decoration: none; /* Remove a linha azul (underline) padrão dos links */
+}
+
+.profile img {
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura da imagem */
+    border-radius: 1px; /* Arredonda levemente as bordas da imagem */
+    object-fit: cover; /* Corta a imagem para caber no contêiner mantendo a proporção */
+    margin-bottom: 1rem; /* Adiciona margem inferior à imagem */
+    transition: transform 0.3s ease, border 0.3s ease; /* Adiciona transição suave para transformações e bordas */
+}
+
+.profile h2 {
+    font-size: 1.2rem; /* Define o tamanho da fonte do subtítulo */
+    font-weight: 400; /* Define o peso da fonte como normal */
+    color: var(--secondary-text); /* Define a cor do texto usando variável */
+    transition: color 0.3s ease; /* Adiciona transição suave para mudança de cor */
+}
+
+.profile:hover h2 {
+    color: var(--text-color); /* Muda a cor do texto para a cor principal no hover */
+}
+
+.profile:hover h2 {
+    color: var(--text-color); /* Muda a cor do texto para a cor principal no hover */
+}
+
+/* Estilos do botão de alternar tema */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-text);
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    background-color: var(--secondary-text);
+    color: var(--bg-color);
+    transform: scale(1.1);
+    border-color: var(--text-color);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.icon-sun,
+.icon-moon {
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon-sun {
+    opacity: 0;
+    transform: rotate(0deg) scale(0);
+}
+
+.icon-moon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+html.light-mode .icon-sun {
+    opacity: 1;
+    transform: rotate(180deg) scale(1);
+}
+
+html.light-mode .icon-moon {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0);
+}
+
+/* Responsividade */
+@media (max-width: 600px) { /* Aplica estilos quando a largura da tela é menor que 600px */
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 2rem; /* Reduz a margem inferior do título */
+    }
+
+    .profile img {
+        width: 120px; /* Reduz a largura da imagem */
+        height: 120px; /* Reduz a altura da imagem */
+    }
+
+    .profiles {
+        gap: 1rem; /* Reduz o espaço entre os perfis */
+    }
+}

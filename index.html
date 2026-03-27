@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+    </button>
+
+    <main>
+        <!-- É importante usar as tags certas (a mais apropriada) para que o
+         navegador interprete corretamente a estrutura da página -->
+        <h1>Quem está assistindo?</h1>
+        <section class="profiles">
+            <a href="catalogo/catalogo.html" class="profile" data-name="Franklin" data-img="/netflix/assets/img/perfil1.jpg">
+                <img src="/netflix/assets/img/perfil1.jpg" alt="Um personagem de aparência gótica e caricatica, com cabelos roxos e monóculo, posa em um cenário fantástico de miniaturas sombrias iluminadas por velas.">
+                <h2>Franklin</h2>
+            </a>
+            <a href="catalogo/catalogo.html" class="profile" data-name="Thalia" data-img="/netflix/assets/img/perfil2.jpg">
+                <img src="/netflix/assets/img/perfil2.jpg" alt="Perfil 2">
+                <h2>Thalia</h2>
+            </a>
+            <a href="catalogo/catalogo.html" class="profile" data-name="Jimim" data-img="/netflix/assets/img/perfil3.jpg">
+                <img src="/netflix/assets/img/perfil3.jpg" alt="Perfil 3">
+                <h2>Jimim</h2>
+            </a>
+            <a href="catalogo/catalogo.html" class="profile" data-name="Chloe" data-img="/netflix/assets/img/perfil4.jpg">
+                <img src="/netflix/assets/img/perfil4.jpg" alt="Perfil 4">
+                <h2>Chloe</h2>
+            </a>
+        </section>
+    </main>
+
+    <script src="theme.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

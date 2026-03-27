@@ -1,0 +1,11 @@
+- Apesar da IA facilitar muito o trabalho é importante compreender o básico, pois a IA também erra
+- Na prática, no dia a dia de trabalho e em novos projetos geralmente iniciamos a aplicação com o arquivo index. (começo) + extensão
+- <!DOCTYPE html> ele é um 'manual' e o navegador o 'usuário'. O usuário está lendo o manual. Ou seja, é em cima do doctype que damos as instruções para o navegador 
+- LiveServer: Sempre que há alteração no arquivo automaticamente ocorre a atualização no navegador, agilizando o desenvolvimento do projeto. É possível baixar a ferramenta no VSCode (clicar no ícone de extensão>pesquisar live server>instalar> para usar clicar com botão direito no arquivo e em Open with Live Server)
+- <head> é tudo o que é lido pelo navegador, mas não é exibido
+- <body> é tudo o que vai aparecer em tela
+- É importante usar as tags certas (a mais apropriada) para que o navegador interprete corretamente a estrutura da página, o que inclusive influncia nas configurações de SEO
+
+O VSCode não vai te julgar se você errar
+
+
