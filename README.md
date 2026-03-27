@@ -23,3 +23,18 @@ Desenvolvido em conjunto com a **Alura** - Plataforma de educação em tecnologi
 ---
 
 *Projeto educacional realizado durante formação em Front-End.*
+
+# Autor
+
+ [Flaviane Nascimento](https://github.com/fl0101/) :rocket:
+
+ "Conhece a ti mesmo"
+ 
+# Contato
+ [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkdin.com/in/flaviane-nascimento-69375816a)](https://www.linkdin.com/in/flaviane-nascimento-69375816a)
+ [![X Badge](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/flaviane80639)
+ [![Email Badge](https://img.shields.io/badge/proton%20mail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:fl0101@protonmail.com)
+
+# Contribuições
+
+Contribuições são sempre bem vindas! Para contribuir lembre-se sempre de realizar testes para as novas classes e funções com a devida documentação.
